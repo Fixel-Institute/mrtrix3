@@ -614,8 +614,6 @@ void run ()
     if (modulate_jac)
       apply_linear_jacobian (output, linear_transform);
 
-    DWI::export_grad_commandline (output);
-
   } else if (warp.valid()) {
 
     if (replace)

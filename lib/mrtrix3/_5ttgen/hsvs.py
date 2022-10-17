@@ -174,7 +174,8 @@ def execute(): #pylint: disable=unused-variable
 
   have_first = False
   have_fast = False
-  fsl_path = os.environ.get('FSLDIR', '')
+  #fsl_path = os.environ.get('FSLDIR', '')
+  fsl_path = False
   if fsl_path:
     # Use brain-extracted, bias-corrected image for FSL tools
     norm_image = os.path.join(mri_dir, 'norm.mgz')
